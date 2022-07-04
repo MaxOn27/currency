@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  text-align: center;
+  background-color: #012a59;
+}
+
+.App {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.currency-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2.25rem;
+  margin: 0 3rem;
+}
+
+.heading {
+  margin: 0 0 .5rem 0;
+  color: #ffffff;
+}
+
+.CurrencyConverter {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  width: 30%;
+  height: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #015cc5;
+  border-radius: 20px;
+  color: #333333;
+}
+
+input {
+  margin: 1rem 0;
+  border: 1px solid #333333;
+  border-radius: .5em;
+  padding: .3rem 1rem;
+  width: 15rem;
+  height: 1.75rem;
+  font-size: 1.4rem;
+}
+
+select {
+  cursor: pointer;
+  border-radius: .5em;
+  width: 5rem;
+  height: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: .5rem;
+  background: none;
+  outline: none;
+  border: none;
+  color: #ffffff;
+}
+
+option {
+  color: #333333;
+}
+
+.euro-sign {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  color: rgb(255, 215, 0);
+  transform: rotate(-35deg);
+  font-size: 13rem;
+}
+
+.hryvnia-sign {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  color: #8cbd8a;
+  transform: rotate(-15deg);
+  font-size: 9rem;
+}
+
+.dollar-sign {
+  position: absolute;
+  top: 45%;
+  right: 25%;
+  color: #076501;
+  transform: rotate(200deg);
+  font-size: 6rem;
+}
+
+.bitcoin-sign {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  color: #ff772b;
+  transform: rotate(0deg);
+  font-size: 5rem;
+}
+
+.pound-sign {
+  position: absolute;
+  top: 75%;
+  right: 5%;
+  color: #df89f3;
+  transform: rotate(-45deg);
+  font-size: 11rem;
+}
+
+.shekel-sign {
+  position: absolute;
+  top: 82%;
+  left: 35%;
+  color: #e1df79;
+  transform: rotate(50deg);
+  font-size: 7rem;
+}
+
+.yen-sign {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: #f3031f;
+  transform: rotate(170deg);
+  font-size: 9rem;
+}
+
+.euro-change {
+  width: 3.75rem;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background: none;
+  outline: none;
+  border: none;
+  padding: 5% 0 0 0;
 }
